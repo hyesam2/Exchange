@@ -7,8 +7,9 @@ public class Exchange {
 		ExchangeUSD USD = new ExchangeUSD();
 		ExchangeEUR EUR = new ExchangeEUR();
 		ExchangeJPY JPY = new ExchangeJPY();
-		exchangeWon Won = new exchangeWon();
+		
 		int number;
+		
 		while (true) {
 			while (true) {
 				System.out.print("환전할 종류는? (1:USD, 2:EUR, 3:JPY) ");
@@ -19,6 +20,7 @@ public class Exchange {
 					break;
 				}
 			}
+		
 			switch (number) {
 			case 1:
 				USD.exchangeUSD();
@@ -35,8 +37,8 @@ public class Exchange {
 			default:
 				break;
 			}
-			System.out.println("\n<거스름돈>");
-			Won.exchangeWon();
+			
+			
 			int terminate = sc.nextInt();
 			if (terminate != 0) {
 
